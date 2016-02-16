@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Student Food Guide</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="header">
+           <h1 id="maintitle">The Student Food Guide</h1>
+            <asp:HyperLink ID="hlinkHome" runat="server">Home</asp:HyperLink>
+            &nbsp;-
+            <asp:HyperLink ID="hlinkTutorials" runat="server">Tutorials</asp:HyperLink>
+            &nbsp;-
+            <asp:HyperLink ID="hlinkContactUs" runat="server">Contact Us</asp:HyperLink>
+            <br />
+            <asp:HyperLink ID="hlinkLogin" runat="server" style="text-align: right">Login</asp:HyperLink>
+        </div>
+
+        <div id="adverts">
+              <h3>scrolling advertisements</h3>
+        </div>
+
+        <div id="main">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            <h2>content goes here</h2>
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div id="footer">
+            <h3>FOOTERCONTENT</h3>
+        </div>
+    </form>
+</body>
+</html>

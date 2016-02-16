@@ -1,0 +1,14 @@
+﻿body {
+    background-color: #c5e0b4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+a {
+    background-color: #6fa4d4;
+}
+.maintitle  {
+   font-family: 'Blackadder ITC';
+}
+.main {
+    border: 1px solid #6fa4d4; 
+}
