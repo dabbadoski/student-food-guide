@@ -1,14 +1,74 @@
 ﻿body {
+    margin:0;
+	padding:0;
     background-color: #c5e0b4;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+    font-family: Calibri, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;    
 }
 a {
-    background-color: #6fa4d4;
+   text-decoration:none;
+   padding: 3px;
 }
-.maintitle  {
-   font-family: 'Blackadder ITC';
+#maintitle  {
+   font-family: 'SketchFlow Print';
+   font-size: 54px;
+   margin: 10px;
 }
-.main {
-    border: 1px solid #6fa4d4; 
+
+div {
+    background-color: white;
+}
+#header {
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+.navbutton {
+    margin-left: 5px;
+    color: black;
+    border: 2px solid white;
+    box-shadow: 2px 2px 3px #888888;
+    background: blue; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#6fa4d4, lightblue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#6fa4d4, lightblue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#6fa4d4,lightblue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#6fa4d4, lightblue); /* Standard syntax */
+    padding: 3px;
+
+}
+.login {
+    color: white;
+    background-color:#6fa4d4;
+    padding: 5px;
+}
+.navbutton, .login {
+    border-radius: 5px;
+
+}
+#adverts {
+    margin-top: 10px;
+    padding:1px;
+}
+h2 {
+    text-align: center;
+}
+#container1 {
+   width:100%;
+
+}
+#col1 {
+   float:left;
+   width:50%;
+}
+#col2 {
+   float:right;
+   width:50%;
+}
+#footer {
+	clear:both;
+	float:left;
+	width:100%;
+}
+#footer p {
+	margin-left:2%;
+	padding-right:2%;
 }

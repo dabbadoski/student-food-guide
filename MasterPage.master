@@ -13,27 +13,28 @@
     <form id="form1" runat="server">
         <div id="header">
            <h1 id="maintitle">The Student Food Guide</h1>
-            <asp:HyperLink ID="hlinkHome" runat="server">Home</asp:HyperLink>
-            &nbsp;-
-            <asp:HyperLink ID="hlinkTutorials" runat="server">Tutorials</asp:HyperLink>
-            &nbsp;-
-            <asp:HyperLink ID="hlinkContactUs" runat="server">Contact Us</asp:HyperLink>
-            <br />
-            <asp:HyperLink ID="hlinkLogin" runat="server" style="text-align: right">Login</asp:HyperLink>
+            <a href="index.aspx" class ="navbutton">Home</a>
+            <a href="tutorials.aspx" class ="navbutton">Tutorials</a>
+            <a href="account.aspx" class ="navbutton">My Account</a>
+            <a href="contact.aspx" class ="navbutton">Contact Us</a>
+            <asp:Button ID="btnSearch" runat="server" Text="Search" />
+            &nbsp;<asp:TextBox ID="txtSearch" runat="server"></asp:TextBox>
+            <a href="login.aspx" class ="login">Login</a>
+            <a href="register.aspx" class ="login">Register</a>
         </div>
 
         <div id="adverts">
-              <h3>scrolling advertisements</h3>
+              <h3 style="text-align:center;">scrolling advertisements</h3>
         </div>
 
         <div id="main">
             <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-            <h2>content goes here</h2>
             </asp:ContentPlaceHolder>
         </div>
 
         <div id="footer">
-            <h3>FOOTERCONTENT</h3>
+            <p style="text-align: center;">Created with ASP.NET Dynamic Data. <br />
+            Copyright Student Food Guide (c) 2016. All rights reserved.</p>
         </div>
     </form>
 </body>
